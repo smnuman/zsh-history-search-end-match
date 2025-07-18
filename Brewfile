@@ -10,6 +10,8 @@ brew "gh"
 brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Internet file retriever
 brew "wget"
 # Enable Windows-like alt-tab
