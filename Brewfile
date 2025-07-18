@@ -12,6 +12,8 @@ brew "git"
 brew "git-crypt"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Improved top (interactive process viewer)
+brew "htop"
 # Internet file retriever
 brew "wget"
 # Enable Windows-like alt-tab
