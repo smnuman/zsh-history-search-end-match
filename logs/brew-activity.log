@@ -1,0 +1,7 @@
+[2025-07-16 20:26:05] brew list
+[2025-07-18 00:06:11] brew list
+[2025-07-18 00:08:00] brew alias
+[2025-07-18 00:52:17] brew --prefix
+[2025-07-18 00:53:57] brew --prefix
+[2025-07-18 00:54:30] brew --prefix
+[2025-07-18 11:08:17] brew install --cask --adopt textmate
