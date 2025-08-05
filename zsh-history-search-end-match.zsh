@@ -12,20 +12,21 @@
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 
 function hs-up-end() {
-  up-line-or-beginning-search
+  zle up-line-or-beginning-search
   zle end-of-line
 }
 
 function hs-down-end() {
-  down-line-or-beginning-search
+  zle down-line-or-beginning-search
   zle end-of-line
 }
 
 zle -N hs-up-end
 zle -N hs-down-end
 
-bindkey '^[[A' hs-up-end      # Up arrow
-bindkey '^[[B' hs-down-end    # Down arrow
+# Portable bindings using terminfo (preferred)
+bindkey "${terminfo[kcuu1]}" hs-up-end     # Up arrow
+bindkey "${terminfo[kcud1]}" hs-down-end   # Down arrow
 
 # Optional: Vim-style keys
 bindkey '^P' hs-up-end
